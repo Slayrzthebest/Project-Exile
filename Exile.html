@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EXILE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html {
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://cdn2.unrealengine.com/fortnite-chapter-3-season-1-battle-pass-1900x600-2bd9f56f38e5.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #00f2ff;
+    }
+    main {
+      max-width: 650px;
+      padding: 80px 20px 40px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1 {
+      font-weight: 900;
+      font-size: 5rem;
+      margin-bottom: 0.2em;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #00f2ff;
+      text-shadow: 0 0 15px #00f2ffcc;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 2.2rem;
+      margin-bottom: 2em;
+      color: #a0f7ff;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.4rem;
+      margin-bottom: 3em;
+      color: #99f0ffcc;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 40px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #0f0f0f;
+      background-color: #00f2ff;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 20px #00f2ffcc;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      margin: 0 10px 20px 10px;
+    }
+    .button:hover {
+      background-color: #00c1cc;
+      box-shadow: 0 0 30px #00c1ccdd;
+    }
+    .image-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding: 20px 20px 40px;
+      max-width: 90vw;
+      margin: 0 auto 40px auto;
+      scroll-behavior: smooth;
+    }
+    .image-scroll img {
+      flex: 0 0 auto;
+      width: 300px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #00f2ffcc;
+      transition: transform 0.3s ease;
+    }
+    .image-scroll img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 20px 0;
+      font-size: 1rem;
+      color: #66d9ffcc;
+      border-top: 1px solid #00f2ff44;
+    }
+    footer div {
+      white-space: nowrap;
+    }
+    #google_translate_element {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 1000;
+      filter: drop-shadow(0 0 3px #00f2ffcc);
+      background: rgba(0,0,0,0.25);
+      border-radius: 8px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="google_translate_element"></div>
+
+  <main>
+    <h1>EXILE</h1>
+    <h2>Plonge dans un monde où la survie n'a aucune limite</h2>
+    <p>Affronte tes adversaires, explore des environnements épiques, et deviens le dernier survivant dans EXILE.</p>
+
+    <a href="#play" class="button">Jouer maintenant</a>
+    <a href="https://discord.gg/pyEUZ6P2xF" class="button" target="_blank" rel="noopener">Exile Discord</a>
+    <a href="https://gofile.io/d/3VHOua" class="button" target="_blank" rel="noopener">Télécharger le Launcher</a>
+    <a href="https://public.simplyblk.xyz/19.10.rar" class="button" target="_blank" rel="noopener">Build</a>
+  </main>
+
+  <div class="image-scroll" aria-label="Défilement images Exile">
+    <img src="https://i.ytimg.com/vi/knAYcg7Tt8E/hq720.jpg" alt="Image 1 Exile" />
+    <img src="https://www.gamespot.com/a/uploads/original/1632/16320660/3914344-1%2835%29.jpg" alt="Image 2 Exile" />
+    <img src="https://cdn-0001.qstv.on.epicgames.com/gYNfUpWlkevFgvjNka/image/landscape_comp.jpeg" alt="Image 3 Exile" />
+    <img src="https://cdn.mos.cms.futurecdn.net/qi9gyoYEX9CaqFkQkcdimb.png" alt="Image 4 Exile" />
+    <img src="https://i.ytimg.com/vi/Ww9OhgXWW0Q/hq720.jpg" alt="Image 5 Exile" />
+  </div>
+
+  <footer>
+    <div>Créateur de Exile : Pxreno</div>
+    <div>Développeur : Skylix</div>
+    <div>Fondateur du site : Swiiz</div>
+  </footer>
+
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr',
+        includedLanguages: 'en,es,de,it,ru,zh-CN,ja,ko,pt,ar,hi',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
